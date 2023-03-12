@@ -20,6 +20,12 @@ int main(void){
     }
     else{
         printf("O número %d não é primo.", number);
+        if(number < 0){
+            printf(" Pois para ser um número primo é necessário ter somente 2 divisores distintos e naturais.");
+        }
+        else if(number == 0){
+            printf(" pois tem infinitos divisores.");
+        }
     }
     return 0;
 }
